@@ -1,0 +1,25 @@
+{% extends 'frontend/base.html' %}
+{% block title %} HOME {% endblock%}
+{% block content %}
+<script>
+function myfunction(){
+    alert("Save")
+}
+
+</script>
+<div class="container" style="border: 1px solid black;">
+<div class="jumbotron" style="background-color: gainsboro;">
+    <h1 class="display-3" >WELCOME</h1>
+    <p class="lead">It not your rainy days</p>
+    <hr class="my-2">
+    <p><u>make it youself</u></p>
+    <div class="form-group">
+    
+    <textarea class="form-control" name="" id="text" rows="3"></textarea>
+</div><br>
+    <input type="date" name="" id="date"><br><br>
+    <button class="btn btn-dark btn-group-sm"  role="button" onclick="myfunction()">Remember</button>
+   
+</div>
+</div>
+{% endblock %}
